@@ -1,0 +1,19 @@
+img{
+    height: 80vh;
+    width: 80vw;
+    object-fit: cover;
+}
+
+div {
+    position: relative;
+}
+
+h1 {
+    position:absolute;
+    top: 80%;
+    left: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+}
