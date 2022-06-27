@@ -3,6 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import PhotoCard from "./components/photo-card";
+import PrevArrow from "./components/prev-arrow";
+import NextArrow from "./components/next-arrow";
+
 import './App.styles.css'
 
 function App() {
@@ -11,14 +14,19 @@ function App() {
     { 'name': 'spenser-sembrat-2_Zn9zhGEG0-unsplash.jpg', 'credit': 'Spenser Sembrat' },
     { 'name': 'stephen-leonardi-wfxOTWu6bqQ-unsplash.jpg', 'credit': 'Stephen Leonardi' },
     { 'name': 'vimal-s-KMOSPP_iYV8-unsplash.jpg', 'credit': 'Vimal S' },
+    { 'name': 'milad-fakurian-MWkApry5F30-unsplash.jpg', 'credit': 'Milad Fakurian' }
   ]
 
   const settings = {
-    arrows: false,
+    infinite: true,
+    speed: 700,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />
   }
 
   return (
     <main>
+      <h1 className="heading">React Slider Demo</h1>
       <Slider {...settings}>
         {
           images.map((image, index) => (

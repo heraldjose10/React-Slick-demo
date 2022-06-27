@@ -1,0 +1,10 @@
+.arrow {
+    font-size: 100px;
+    background-color: black;
+    color: white;
+    margin: 0 20px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
