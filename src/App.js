@@ -26,7 +26,7 @@ function App() {
 
   return (
     <main>
-      <h1 className="heading">React Slider Demo</h1>
+      <h1 className="heading">React Slick Demo</h1>
       <Slider {...settings}>
         {
           images.map((image, index) => (
